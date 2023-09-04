@@ -1,0 +1,29 @@
+<style>
+    /* Define the green-button class */
+    .green-button {
+        background-color: green;
+        color: white;
+        /* Set text color to white or any other desired color */
+
+        border-radius: 12px;
+        height: 30px;
+        width: 186px;
+        margin-left: -21px;
+        cursor: pointer;
+    }
+
+    /* Center-align the button */
+    .button-container {
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
+<h2 mat-dialog-title>Research Name</h2>
+<mat-dialog-content>
+    <textarea style="resize: none;" rows="5" placeholder="Enter research name"></textarea>
+</mat-dialog-content>
+<mat-dialog-actions class="button-container">
+    <button mat-raised-button [ngClass]="'green-button'" (click)="closeDialog()">Continue</button><br>
+    
+</mat-dialog-actions>
