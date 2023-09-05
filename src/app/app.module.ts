@@ -1,26 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DialogComponent } from './dialog/dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
-import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms'; // Import FormsModule if you're using ngModel
+import { DatePipe } from '@angular/common';
+import { AppComponent } from './app.component';
+import { DialogComponent } from './dialog/dialog.component';
+import { DataService } from './data.service'; // Import the DataService
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    DialogComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatDialogModule,
-    MatInputModule
-  ],
-  providers: [],
+  declarations: [AppComponent, DialogComponent],
+  imports: [BrowserModule, MatDialogModule, FormsModule], // Add FormsModule if needed
+  providers: [DatePipe,DataService],// Provide the DataService here
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

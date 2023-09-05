@@ -1,2 +1,30 @@
+.green-button {
+    background-color: green;
+    color: white;
+    /* Set text color to white or any other desired color */
 
+    border-radius: 12px;
+    height: 30px;
+    width: 186px;
+    margin-left: -5px;
+    cursor: pointer;
+}
+
+/* Center-align the button */
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+.blank-button {
+    border: none;
+    background-color: white;
+    color: black;
+    /* Set text color to white or any other desired color */
+
+    border-radius: 12px;
+    height: 30px;
+    width: 186px;
+    margin-left: 14px;
+    cursor: pointer;
+}
   
